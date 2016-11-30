@@ -15,6 +15,17 @@ public class Node{
 		n.next = end;
 	}
 
+	void removeNode(int d){
+		Node n = this;
+		while(n.next != null){
+			if(n.next.data == d){
+				n.next = n.next.next;
+				return;
+			}
+			n = n.next;
+		}
+	}
+
 	void printLinkedList(){
 		Node n = this;
 		while(n != null){
@@ -26,7 +37,10 @@ public class Node{
 	public static void main(String[] args){
 		Node n = new Node(69);
 		n.appendToTail(125);
+		n.appendToTail(31);
+		n.appendToTail(43);
 		n.printLinkedList();
+		n.removeNode(31);
 	}
 }
 

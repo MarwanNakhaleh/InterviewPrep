@@ -1,0 +1,12 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Learn {
+	public static void main(String[] args){
+		Map<String, Integer> map = new HashMap<>();
+		String poop = Integer.toString(3000);
+		System.out.println(poop);
+		char b = 'b';
+		System.out.print(Character.toString(b));
+	}
+}
